@@ -165,3 +165,23 @@ nav {
 .blog {
   background: blue;
 }
+
+.blog article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 auto;
+  flex-wrap: wrap;
+  width: 800px;
+}
+
+.blog article .item {
+  display: flex;
+  flex-direction: column;
+  max-width: 390px;
+}
+
+.blog article img {
+  height: 200px;
+  width: 380px;
+}
