@@ -15,6 +15,8 @@
   --font-medium: 14px;
   --font-small: 12px;
   --font-micro: 10px;
+  /* padding */
+  --padding-small: 12px;
 }
 
 * {
@@ -32,9 +34,17 @@ body {
 }
 
 button {
-  -webkit-appearance: none;
+  outline: none;
+  /* box-shadow: none; */
+  border: 1px solid var(--white-color);
+
+  /* -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+  appearance: none; */
+  color: var(--white-color);
+  background-color: #060e1b;
+
+  /* hover: pointer; */
 }
 
 section {
@@ -49,13 +59,35 @@ section h1 {
 .home {
   background: #060e1b;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .home .introduce {
+  /* display: flex; */
   color: var(--white-color);
   text-align: center;
+  line-height: var(--font-large);
 }
 
 .home .introduce .highlight {
   color: var(--pink-color);
+}
+
+.home button {
+  margin-top: var(--side-padding);
+  font-size: var(--font-larget);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--black-color);
+  color: var(--white-color);
+  height: 50px;
+  font-size: var(--font-large);
 }
