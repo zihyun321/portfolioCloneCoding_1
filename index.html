@@ -6,25 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <script src="js/main.js" defer></script>
 <body>
+    <!-- Home -->
     <section class="home">
+        <div class="canvas">
+            <canvas id="canvas"></canvas>
+        </div>
         <span class="introduce">
-            Hello, I'm Matterew Williams.
+            Hello, I'm <span class="highlight">Matterew Williams</span>.<br/>
             I'am a full-stack web developers.
         </span>
         <button class="viewBtn">View my work</button>
     </section>
-    <ul class="header">
-        <li>Home</li>
-        <li>About</li>
-        <li>Portfoilo</li>
-        <li>Blog</li>
-        <li>Contact</li>
-    </ul>
+
+    <!-- Navbar -->
+    <nav class="header">
+        <div>Home</div>
+        <div>About</div>
+        <div>Portfoilo</div>
+        <div>Blog</div>
+        <div>Contact</div>
+    </nav>
+
+    <!-- About -->
     <section class="about">
-        <header>About</header>
+        <h1>About</h1>
         <ul class="feature">
             <li>
                 <span class="title">Fast</span>
@@ -64,8 +75,10 @@
             <li>Sketch</li>
         </ul>
     </section>
+
+    <!-- Portfoilo -->
     <section class="portfoilo">
-        <header>Projects</header>
+        <h1>Projects</h1>
         <ul class="project__menu">
             <li>All</li>
             <li>Ruby/Rails</li>
@@ -73,8 +86,10 @@
             <li>Javascript</li>
         </ul>
     </section>
+
+    <!-- Blog -->
     <section class="blog">
-        <header>Blog</header>
+        <h1>Blog</h1>
         <div class="list">
             <div>
                 <img src="" alt="">
@@ -110,8 +125,10 @@
             </div>
         </div>
     </section>
+
+    <!-- Contact -->
     <section class="contact">
-        <header>Contact</header>
+        <h1>Contact</h1>
         <span>Have a question or want to work together?</span>
         <form action="submit">
             <input type="text"/>
