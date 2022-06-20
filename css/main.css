@@ -143,6 +143,25 @@ nav {
   background: green;
 }
 
+.portfoilo .project__menu {
+  display: flex;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.portfoilo article {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+
+.portfoilo article img {
+  width: 390px;
+  height: 300px;
+}
+
 .blog {
   background: blue;
 }
